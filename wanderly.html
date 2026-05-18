@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderly Travel Deck | Tran Hoang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], serif: ['"Playfair Display"', 'serif'], mono: ['"Space Grotesk"', 'sans-serif'] }, colors: { framer: { bg: '#FAF9F5', border: '#EBEAE6', charcoal: '#1A1A1A', grayText: '#666666' } } } }
+        }
+    </script>
+</head>
+<body class="text-framer-charcoal font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <header class="sticky top-0 z-50 bg-[#FAF9F5]/90 backdrop-blur-md border-b border-framer-border">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex flex-col">
+                    <span class="font-mono text-base tracking-widest uppercase font-extrabold text-framer-charcoal">TRAN HOANG</span>
+                    <span class="text-[10px] tracking-wider text-framer-grayText uppercase font-semibold">UI/UX Portfolio</span>
+                </a>
+                <nav class="flex items-center space-x-6 sm:space-x-10 text-xs tracking-widest uppercase font-bold text-framer-grayText">
+                    <a href="about.html" class="pb-1 hover:text-framer-charcoal transition-colors">About</a>
+                    <a href="projects.html" class="pb-1 framer-nav-active">Projects</a>
+                    <a href="contact.html" class="pb-1 hover:text-framer-charcoal transition-colors">Contact</a>
+                    <a href="javascript:void(0)" onclick="alert('Downloading Tran Hoang UI/UX Resume PDF...');" class="pb-1 hover:text-framer-charcoal transition-colors">Resume</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="slide-view py-6 space-y-12">
+            <a href="projects.html" class="inline-flex items-center space-x-2 text-xs font-bold uppercase font-mono tracking-widest text-framer-grayText hover:text-framer-charcoal">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i><span>Back to Decks</span>
+            </a>
+
+            <div class="bg-[#4A6B5D] text-white rounded-[2.5rem] p-8 lg:p-12 space-y-8 relative overflow-hidden border border-[#3e5a4e]">
+                <div class="flex flex-wrap justify-between items-center gap-4 border-b border-white/10 pb-6">
+                    <div class="space-y-1">
+                        <span class="text-[10px] font-mono font-bold text-emerald-300 uppercase tracking-widest">Wanderly Travelling App</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl">Mobile Trip Planner</h2>
+                    </div>
+                    <span class="text-xs font-mono text-emerald-200">PAGE 6 OF 15</span>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 pt-4">
+                    <div class="bg-white text-framer-charcoal rounded-2xl overflow-hidden p-0 text-[8px] shadow-md flex flex-col transition-transform hover:scale-105">
+                        <div class="h-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=400&q=80')"></div>
+                        <div class="p-2.5 space-y-1 bg-white"><span class="block font-bold">Seoul Explore</span></div>
+                    </div>
+                    <div class="bg-white text-framer-charcoal rounded-2xl overflow-hidden p-0 text-[8px] shadow-md flex flex-col transition-transform hover:scale-105">
+                        <div class="h-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=400&q=80')"></div>
+                        <div class="p-2.5 space-y-1 bg-white"><span class="block font-bold">New York City</span></div>
+                    </div>
+                    <div class="bg-white text-framer-charcoal rounded-2xl overflow-hidden p-0 text-[8px] shadow-md flex flex-col transition-transform hover:scale-105">
+                        <div class="h-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=400&q=80')"></div>
+                        <div class="p-2.5 space-y-1 bg-white"><span class="block font-bold">Ha Long Bay</span></div>
+                    </div>
+                    <div class="bg-white text-framer-charcoal rounded-2xl overflow-hidden p-0 text-[8px] shadow-md flex flex-col transition-transform hover:scale-105">
+                        <div class="h-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=400&q=80')"></div>
+                        <div class="p-2.5 space-y-1 bg-white"><span class="block font-bold">Santorini Blue</span></div>
+                    </div>
+                    <div class="bg-white text-framer-charcoal rounded-2xl overflow-hidden p-0 text-[8px] shadow-md hidden sm:flex flex-col transition-transform hover:scale-105">
+                        <div class="h-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=400&q=80')"></div>
+                        <div class="p-2.5 space-y-1 bg-white"><span class="block font-bold">Kyoto Zen</span></div>
+                    </div>
+                </div>
+                <p class="text-xs text-emerald-100 leading-relaxed max-w-2xl pt-4 font-light">
+                    Wanderly Travel is a smart and intuitive travel app that helps users organize trips, discover hidden gems, and keep track of expenses, all in one place.
+                </p>
+            </div>
+
+            <div class="space-y-4 pt-6 text-center max-w-3xl mx-auto">
+                <span class="font-mono text-[10px] uppercase font-bold text-[#E66453] tracking-widest bg-rose-50 px-2.5 py-1 rounded-full">Section 01</span>
+                <h3 class="font-serif text-3xl text-framer-charcoal">Problem</h3>
+                <p class="text-sm text-framer-grayText leading-relaxed font-light">
+                    Travelers often feel overwhelmed planning trips, especially when trying to discover authentic experiences while staying within budget.
+                </p>
+            </div>
+
+            <div class="space-y-6 pt-10 border-t border-framer-border text-center max-w-3xl mx-auto">
+                <span class="font-mono text-[10px] uppercase font-bold text-teal-800 bg-teal-50 px-2.5 py-1 rounded-full">Section 02</span>
+                <h3 class="font-serif text-3xl text-framer-charcoal">Objective</h3>
+                <p class="text-sm text-framer-grayText leading-relaxed font-light mb-4">
+                    Wanderly Travel helps travelers plan, organize, and enjoy trips effortlessly. The final prototype demonstrates these goals through a clean, user-friendly interface.
+                </p>
+                <button onclick="alert('Launching Wanderly interactive Figma prototype...');" class="bg-teal-800 text-white hover:bg-teal-950 px-8 py-4 rounded-xl text-xs font-bold uppercase tracking-widest transition-all inline-flex items-center space-x-2.5 shadow-md">
+                    <span>View Final Prototype</span><i data-lucide="external-link" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies Deck | Tran Hoang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], serif: ['"Playfair Display"', 'serif'], mono: ['"Space Grotesk"', 'sans-serif'] }, colors: { framer: { bg: '#FAF9F5', border: '#EBEAE6', charcoal: '#1A1A1A', grayText: '#666666' } } } }
+        }
+    </script>
+</head>
+<body class="text-framer-charcoal font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <header class="sticky top-0 z-50 bg-[#FAF9F5]/90 backdrop-blur-md border-b border-framer-border">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex flex-col">
+                    <span class="font-mono text-base tracking-widest uppercase font-extrabold text-framer-charcoal">TRAN HOANG</span>
+                    <span class="text-[10px] tracking-wider text-framer-grayText uppercase font-semibold">UI/UX Portfolio</span>
+                </a>
+                <nav class="flex items-center space-x-6 sm:space-x-10 text-xs tracking-widest uppercase font-bold text-framer-grayText">
+                    <a href="about.html" class="pb-1 hover:text-framer-charcoal transition-colors">About</a>
+                    <a href="projects.html" class="pb-1 framer-nav-active">Projects</a>
+                    <a href="contact.html" class="pb-1 hover:text-framer-charcoal transition-colors">Contact</a>
+                    <a href="javascript:void(0)" onclick="alert('Downloading Tran Hoang UI/UX Resume PDF...');" class="pb-1 hover:text-framer-charcoal transition-colors">Resume</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="slide-view py-6 space-y-12">
+            <div class="text-center max-w-xl mx-auto space-y-2">
+                <span class="font-mono text-xs tracking-widest uppercase text-framer-charcoal font-bold">Projects</span>
+                <h1 class="font-serif text-4xl font-normal text-framer-charcoal">UX Case Studies</h1>
+                <p class="text-sm text-framer-grayText">Select a portfolio project presentation slide below to open full details.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="project-wanderly.html" class="bg-white border border-framer-border rounded-[2rem] overflow-hidden shadow-sm hover:border-teal-800 transition-all flex flex-col justify-between h-[28rem]">
+                    <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?auto=format&fit=crop&w=800&q=80" class="w-full h-40 object-cover" alt="Wanderly" />
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-2">
+                            <span class="text-[10px] font-mono font-bold text-teal-800 bg-teal-50 px-3 py-1 rounded-full uppercase">Pages 6-9</span>
+                            <h3 class="font-serif text-2xl text-framer-charcoal">Wanderly Travelling App</h3>
+                            <p class="text-xs text-framer-grayText line-clamp-2">A mobile app designed to help travelers plan, organize, and track budgets.</p>
+                        </div>
+                        <div class="h-10 rounded-xl bg-teal-50 border border-teal-100 flex items-center justify-center font-bold text-teal-800 font-mono text-xs uppercase tracking-wider">Explore Case Study</div>
+                    </div>
+                </a>
+
+                <a href="project-calmpath.html" class="bg-white border border-framer-border rounded-[2rem] overflow-hidden shadow-sm hover:border-rose-300 transition-all flex flex-col justify-between h-[28rem]">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80" class="w-full h-40 object-cover" alt="CalmPath" />
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-2">
+                            <span class="text-[10px] font-mono font-bold text-rose-500 bg-rose-50 px-3 py-1 rounded-full uppercase">Pages 10-12</span>
+                            <h3 class="font-serif text-2xl text-framer-charcoal">CalmPath Website</h3>
+                            <p class="text-xs text-framer-grayText line-clamp-2">Boutique somatic clinical network designed to match therapeutic intakes with physical signals.</p>
+                        </div>
+                        <div class="h-10 rounded-xl bg-rose-50 border border-rose-100 flex items-center justify-center font-bold text-rose-500 font-mono text-xs uppercase tracking-wider">Explore Case Study</div>
+                    </div>
+                </a>
+
+                <a href="project-sleepytime.html" class="bg-white border border-framer-border rounded-[2rem] overflow-hidden shadow-sm hover:border-indigo-800 transition-all flex flex-col justify-between h-[28rem]">
+                    <img src="https://images.unsplash.com/photo-1447069387593-a5de0862481e?auto=format&fit=crop&w=800&q=80" class="w-full h-40 object-cover" alt="Sleepytime" />
+                    <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                        <div class="space-y-2">
+                            <span class="text-[10px] font-mono font-bold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full uppercase">Pages 13-15</span>
+                            <h3 class="font-serif text-2xl text-framer-charcoal">Redesigning SleepyTime</h3>
+                            <p class="text-xs text-framer-grayText line-clamp-2">Calming dark-sky sleep cycle calculator redesigned with interactive alarm anchors.</p>
+                        </div>
+                        <div class="h-10 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center font-bold text-indigo-700 font-mono text-xs uppercase tracking-wider">Explore Case Study</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
