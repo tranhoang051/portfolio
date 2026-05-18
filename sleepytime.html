@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SleepyTime Redesign Deck | Tran Hoang</title>
+    <title>Sleepy Tine | Tran Hoang</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script>
         tailwind.config = {
-            theme: { extend: { fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], serif: ['"Playfair Display"', 'serif'], mono: ['"Space Grotesk"', 'sans-serif'] }, colors: { framer: { bg: '#FAF9F5', border: '#EBEAE6', charcoal: '#1A1A1A', grayText: '#666666' } } } }
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        mono: ['"Space Grotesk"', 'sans-serif'],
+                    },
+                    colors: {
+                        framer: {
+                            bg: '#FAF9F5',
+                            accent: '#E66453',
+                            border: '#EBEAE6',
+                            charcoal: '#1A1A1A',
+                            grayText: '#666666'
+                        }
+                    }
+                }
+            }
         }
     </script>
 </head>
@@ -32,43 +52,203 @@
         </div>
     </header>
 
-    <main class="flex-grow max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div class="slide-view py-6 space-y-12">
-            <a href="projects.html" class="inline-flex items-center space-x-2 text-xs font-bold uppercase font-mono tracking-widest text-framer-grayText hover:text-framer-charcoal">
-                <i data-lucide="arrow-left" class="w-4 h-4"></i><span>Back to Decks</span>
+    <main class="flex-grow max-w-5xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="slide-view py-6 space-y-16">
+            
+            <a href="projects.html" class="inline-flex items-center space-x-2 text-xs font-bold uppercase font-mono tracking-widest text-framer-grayText hover:text-framer-charcoal transition-colors">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                <span>Back to Case Studies</span>
             </a>
 
-            <div class="bg-[#2B2A3D] text-white rounded-[2.5rem] p-8 lg:p-12 space-y-8 relative overflow-hidden shadow-2xl">
-                <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
-                
-                <div class="flex justify-between items-center border-b border-white/10 pb-6 relative z-10">
+            <div class="bg-[#4A6B5D] text-white rounded-[2.5rem] p-8 lg:p-12 space-y-8 relative overflow-hidden border border-[#3e5a4e] shadow-xl">
+                <div class="flex flex-wrap justify-between items-center gap-4 border-b border-white/10 pb-6">
                     <div class="space-y-1">
-                        <span class="text-[10px] font-mono font-bold text-amber-300 uppercase tracking-widest">SleepyTime Sleep Calculator Redesign</span>
-                        <h2 class="font-serif text-3xl sm:text-4xl">Calming Sleep Support</h2>
+                        <span class="text-[10px] font-mono font-bold text-emerald-300 uppercase tracking-widest">Case Study Deck</span>
+                        <h2 class="font-serif text-4xl sm:text-5xl tracking-tight">Wanderly Mobile App</h2>
                     </div>
-                    <span class="text-xs font-mono text-indigo-200">PAGE 13 OF 15</span>
+                    <span class="text-xs font-mono text-emerald-200 bg-white/10 px-3 py-1 rounded-full">PAGES 06-09</span>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative z-10">
-                    <div class="flex flex-col items-center py-4">
-                        <div class="bg-[#1F1D2B] rounded-full p-6 w-36 h-36 flex items-center justify-center relative">
-                            <svg class="w-24 h-24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M68 20 A22 22 0 1 0 82 45 A26 26 0 1 1 68 20 Z" fill="#FAF3DD" />
-                                <ellipse cx="50" cy="70" rx="26" ry="16" fill="#E26D5C" />
-                                <circle cx="36" cy="62" r="12" fill="#E26D5C" />
-                            </svg>
-                        </div>
+                <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 pt-4">
+                    <div class="bg-white text-framer-charcoal rounded-2xl overflow-hidden text-[10px] shadow-md flex flex-col transition-transform hover:scale-[1.03]">
+                        <div class="h-24 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=400&q=80')"></div>
+                        <div class="p-3 font-semibold bg-white text-center"><span>Seoul, KR</span></div>
                     </div>
-                    <div class="rounded-2xl overflow-hidden border border-indigo-900/60 shadow-inner">
-                        <img src="https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?auto=format&fit=crop&w=800&q=80" class="w-full h-40 object-cover opacity-80" alt="Quiet starry sky landscape" />
+                    <div class="bg-white text-framer-charcoal rounded-2xl overflow-hidden text-[10px] shadow-md flex flex-col transition-transform hover:scale-[1.03]">
+                        <div class="h-24 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=400&q=80')"></div>
+                        <div class="p-3 font-semibold bg-white text-center"><span>New York, US</span></div>
+                    </div>
+                    <div class="bg-white text-framer-charcoal rounded-2xl overflow-hidden text-[10px] shadow-md flex flex-col transition-transform hover:scale-[1.03]">
+                        <div class="h-24 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=400&q=80')"></div>
+                        <div class="p-3 font-semibold bg-white text-center"><span>Ha Long, VN</span></div>
+                    </div>
+                    <div class="bg-white text-framer-charcoal rounded-2xl overflow-hidden text-[10px] shadow-md flex flex-col transition-transform hover:scale-[1.03]">
+                        <div class="h-24 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=400&q=80')"></div>
+                        <div class="p-3 font-semibold bg-white text-center"><span>Santorini, GR</span></div>
+                    </div>
+                    <div class="bg-white text-framer-charcoal rounded-2xl overflow-hidden text-[10px] shadow-md hidden sm:flex flex-col transition-transform hover:scale-[1.03]">
+                        <div class="h-24 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=400&q=80')"></div>
+                        <div class="p-3 font-semibold bg-white text-center"><span>Kyoto, JP</span></div>
                     </div>
                 </div>
-                <p class="text-xs text-indigo-100 text-center mx-auto max-w-xl relative z-10 font-light">
-                    SleepyTime is a sleep cycle calculator that helps users find the best time to fall asleep or wake up. I added an alarm feature and simplified buttons.
+
+                <p class="text-sm text-emerald-100 leading-relaxed max-w-3xl pt-2 font-light">
+                    Wanderly Travel is a comprehensive mobile utility curated to minimize logistical friction for modern independent travelers. By unifying algorithmic, context-aware discovery paths with absolute financial accounting mechanisms, users can transition instantly from high-level travel dreaming to organized execution.
                 </p>
             </div>
-        </div>
+                <div class="grid grid-cols-1 gap-12 max-w-4xl mx-auto">
+                    <div class="space-y-3">
+                        <h3 class="font-serif text-2xl text-framer-charcoal flex items-center gap-2">
+                            <span class="w-1.5 h-6 bg-brand-peach inline-block rounded-full"></span>Problem
+                        </h3>
+                        <p class="text-xs sm:text-sm text-framer-grayText leading-relaxed font-light">
+                            Travelers often get overwhelmed juggling multiple planning tools. Scattered reservations, hard-to-read map pins, and confusing manual expense spreadsheets create frustration, leading many to give up before their trip even begins.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h3 class="font-serif text-2xl text-framer-charcoal flex items-center gap-2">
+                            <span class="w-1.5 h-6 bg-teal-800 inline-block rounded-full"></span>Objective
+                        </h3>
+                        <p class="text-xs sm:text-sm text-framer-grayText leading-relaxed font-light">
+                            Wanderly targets these paint points by introducing clear itinerary timelines, smart automated budget summaries, and tailored destination finders. The goal was to build a cohesive interface that makes trip planning simple and transparent for both solo explorers and groups.
+                        </p>
+                        <div>
+                            <button onclick="alert('Launching Wanderly Interactive Prototype...');" class="bg-teal-800 hover:bg-teal-950 text-white text-[10px] font-mono uppercase tracking-wider px-6 py-3 rounded-xl transition-all font-bold">
+                                View Final Prototype &rarr;
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h3 class="font-serif text-2xl text-framer-charcoal flex items-center gap-2">
+                            <span class="w-1.5 h-6 bg-framer-charcoal inline-block rounded-full"></span>Problems (Key Pain Points)
+                        </h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-light">
+                            <div class="p-5 border border-framer-border bg-white rounded-2xl shadow-sm">
+                                <span class="font-bold text-teal-800 font-mono text-sm block mb-1">01</span>
+                                <h4 class="font-bold text-framer-charcoal mb-1">Cost Tracking Chaos</h4>
+                                <p class="text-framer-grayText">Users find it difficult to track their actual spending distributions while moving from place to place.</p>
+                            </div>
+                            <div class="p-5 border border-framer-border bg-white rounded-2xl shadow-sm">
+                                <span class="font-bold text-teal-800 font-mono text-sm block mb-1">02</span>
+                                <h4 class="font-bold text-framer-charcoal mb-1">Choice Overwhelm</h4>
+                                <p class="text-framer-grayText">Too much time is spent digging through mismatched advice and filtered review feeds to find authentic spots.</p>
+                            </div>
+                            <div class="p-5 border border-framer-border bg-white rounded-2xl shadow-sm">
+                                <span class="font-bold text-teal-800 font-mono text-sm block mb-1">03</span>
+                                <h4 class="font-bold text-framer-charcoal mb-1">Rigid Itineraries</h4>
+                                <p class="text-framer-grayText">Static maps make it hard for travelers to tweak and update their routes when unexpected delays happen.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h3 class="font-serif text-2xl text-framer-charcoal flex items-center gap-2">
+                            <span class="w-1.5 h-6 bg-framer-charcoal inline-block rounded-full"></span>Research
+                        </h3>
+                        <p class="text-xs sm:text-sm text-framer-grayText leading-relaxed font-light">
+                            User interviews and contextual research showed that travelers value immediate access to their daily expenses and route edits far more than social feeds. Observing real-world planning habits helped guide our emphasis on accessible layout structures.
+                        </p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h3 class="font-serif text-2xl text-framer-charcoal flex items-center gap-2">
+                            <span class="w-1.5 h-6 bg-framer-charcoal inline-block rounded-full"></span>Competitive Analysis
+                        </h3>
+                        <div class="border border-framer-border rounded-xl overflow-hidden text-xs bg-white shadow-sm">
+                            <table class="w-full text-left border-collapse">
+                                <tr class="bg-framer-bg font-mono font-bold text-framer-grayText border-b border-framer-border">
+                                    <th class="p-4">App Evaluated</th>
+                                    <th class="p-4">Identified Strength</th>
+                                    <th class="p-4">Identified Limitation</th>
+                                </tr>
+                                <tr class="border-b border-framer-border font-light">
+                                    <td class="p-4 font-bold text-framer-charcoal">Tripo App</td>
+                                    <td class="p-4">Simple list timelines</td>
+                                    <td class="p-4">Lacks cost dashboards and unique location recommendations</td>
+                                </tr>
+                                <tr class="font-light">
+                                    <td class="p-4 font-bold text-framer-charcoal">Google Trips</td>
+                                    <td class="p-4">Excellent map pin sync</td>
+                                    <td class="p-4">Can feel cluttered; missing integrated budget controls</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h3 class="font-serif text-2xl text-framer-charcoal flex items-center gap-2">
+                            <span class="w-1.5 h-6 bg-framer-charcoal inline-block rounded-full"></span>Target Personas
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs font-light">
+                            <div class="p-6 bg-white border border-framer-border rounded-2xl shadow-sm space-y-2">
+                                <span class="bg-brand-peach text-framer-charcoal px-2 py-0.5 rounded text-[9px] font-mono font-bold">PROFILE A</span>
+                                <h4 class="text-base font-bold text-framer-charcoal">Anna (24) — Freelance Content Designer</h4>
+                                <p class="text-framer-grayText"><strong>Goals:</strong> To pin scenic visual locations seamlessly while keeping track of daily food and accommodation expenses.</p>
+                                <p class="text-framer-grayText"><strong>Pain Points:</strong> Annoyed by messy cost lists; hates switching between map apps and notepad documents.</p>
+                            </div>
+                            <div class="p-6 bg-white border border-framer-border rounded-2xl shadow-sm space-y-2">
+                                <span class="bg-brand-pastelBlue text-framer-charcoal px-2 py-0.5 rounded text-[9px] font-mono font-bold">PROFILE B</span>
+                                <h4 class="text-base font-bold text-framer-charcoal">David (36) — Remote Project Manager</h4>
+                                <p class="text-framer-grayText"><strong>Goals:</strong> Wants to coordinate clear daily agendas and back-up schedules for his family in one central hub.</p>
+                                <p class="text-framer-grayText"><strong>Pain Points:</strong> Easily stressed by unexpected transit changes; gets overwhelmed when itineraries are too rigid.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h3 class="font-serif text-2xl text-framer-charcoal flex items-center gap-2">
+                            <span class="w-1.5 h-6 bg-framer-charcoal inline-block rounded-full"></span>Wireframes
+                        </h3>
+                        <p class="text-xs sm:text-sm text-framer-grayText leading-relaxed font-light">
+                            Early low-fidelity layouts focused on creating clear connections between dashboard routes, trip timelines, and expense charts before adding visual branding elements.
+                        </p>
+                        <div class="bg-slate-100 p-6 rounded-2xl grid grid-cols-2 sm:grid-cols-4 gap-4 text-[10px] text-framer-grayText font-mono">
+                            <div class="bg-white p-3 rounded-lg border border-framer-border h-24 flex flex-col justify-between">
+                                <span>1. Discovery Hub</span>
+                                <div class="h-1 w-full bg-slate-200 rounded"></div>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border border-framer-border h-24 flex flex-col justify-between">
+                                <span>2. Map View</span>
+                                <div class="h-3 w-3 bg-slate-300 rounded-full"></div>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border border-framer-border h-24 flex flex-col justify-between">
+                                <span>3. Timelines</span>
+                                <div class="space-y-1"><div class="h-1 w-2/3 bg-slate-200 rounded"></div><div class="h-1 w-1/2 bg-slate-100 rounded"></div></div>
+                            </div>
+                            <div class="bg-white p-3 rounded-lg border border-framer-border h-24 flex flex-col justify-between">
+                                <span>4. Expense Log</span>
+                                <div class="h-2 w-full bg-emerald-100 rounded"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h3 class="font-serif text-2xl text-framer-charcoal flex items-center gap-2">
+                            <span class="w-1.5 h-6 bg-framer-charcoal inline-block rounded-full"></span>Test & Iterate
+                        </h3>
+                        <p class="text-xs sm:text-sm text-framer-grayText leading-relaxed font-light">
+                            Usability testing highlighted that a plain list of expenses felt disconnected from the itinerary. To fix this, I added a dynamic donut chart to the dashboard, making it easier for users to see their budget breakdowns at a glance.
+                        </p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h3 class="font-serif text-2xl text-framer-charcoal flex items-center gap-2">
+                            <span class="w-1.5 h-6 bg-framer-charcoal inline-block rounded-full"></span>Reflection
+                        </h3>
+                        <p class="text-xs sm:text-sm text-framer-grayText leading-relaxed font-light">
+                            Designing Wanderly highlighted the importance of user-centered iteration. It showed that complex planning tools can feel intuitive and stress-free when information hierarchy and visual balance are prioritized.
+                        </p>
+                    </div>
+                </div>
+            </div>
     </main>
+
+    <footer class="border-t border-framer-border bg-white py-8 text-center text-xs text-framer-grayText font-light">
+        <p>&copy; 2026 Tran Hoang. Hand-built with clean HTML & Tailwind CSS.</p>
+    </footer>
+
     <script>lucide.createIcons();</script>
 </body>
 </html>
