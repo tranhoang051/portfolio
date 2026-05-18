@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SleepyTime Redesign Deck | Tran Hoang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], serif: ['"Playfair Display"', 'serif'], mono: ['"Space Grotesk"', 'sans-serif'] }, colors: { framer: { bg: '#FAF9F5', border: '#EBEAE6', charcoal: '#1A1A1A', grayText: '#666666' } } } }
+        }
+    </script>
+</head>
+<body class="text-framer-charcoal font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <header class="sticky top-0 z-50 bg-[#FAF9F5]/90 backdrop-blur-md border-b border-framer-border">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex flex-col">
+                    <span class="font-mono text-base tracking-widest uppercase font-extrabold text-framer-charcoal">TRAN HOANG</span>
+                    <span class="text-[10px] tracking-wider text-framer-grayText uppercase font-semibold">UI/UX Portfolio</span>
+                </a>
+                <nav class="flex items-center space-x-6 sm:space-x-10 text-xs tracking-widest uppercase font-bold text-framer-grayText">
+                    <a href="about.html" class="pb-1 hover:text-framer-charcoal transition-colors">About</a>
+                    <a href="projects.html" class="pb-1 framer-nav-active">Projects</a>
+                    <a href="contact.html" class="pb-1 hover:text-framer-charcoal transition-colors">Contact</a>
+                    <a href="javascript:void(0)" onclick="alert('Downloading Tran Hoang UI/UX Resume PDF...');" class="pb-1 hover:text-framer-charcoal transition-colors">Resume</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="slide-view py-6 space-y-12">
+            <a href="projects.html" class="inline-flex items-center space-x-2 text-xs font-bold uppercase font-mono tracking-widest text-framer-grayText hover:text-framer-charcoal">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i><span>Back to Decks</span>
+            </a>
+
+            <div class="bg-[#2B2A3D] text-white rounded-[2.5rem] p-8 lg:p-12 space-y-8 relative overflow-hidden shadow-2xl">
+                <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                
+                <div class="flex justify-between items-center border-b border-white/10 pb-6 relative z-10">
+                    <div class="space-y-1">
+                        <span class="text-[10px] font-mono font-bold text-amber-300 uppercase tracking-widest">SleepyTime Sleep Calculator Redesign</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl">Calming Sleep Support</h2>
+                    </div>
+                    <span class="text-xs font-mono text-indigo-200">PAGE 13 OF 15</span>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center relative z-10">
+                    <div class="flex flex-col items-center py-4">
+                        <div class="bg-[#1F1D2B] rounded-full p-6 w-36 h-36 flex items-center justify-center relative">
+                            <svg class="w-24 h-24" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M68 20 A22 22 0 1 0 82 45 A26 26 0 1 1 68 20 Z" fill="#FAF3DD" />
+                                <ellipse cx="50" cy="70" rx="26" ry="16" fill="#E26D5C" />
+                                <circle cx="36" cy="62" r="12" fill="#E26D5C" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden border border-indigo-900/60 shadow-inner">
+                        <img src="https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?auto=format&fit=crop&w=800&q=80" class="w-full h-40 object-cover opacity-80" alt="Quiet starry sky landscape" />
+                    </div>
+                </div>
+                <p class="text-xs text-indigo-100 text-center mx-auto max-w-xl relative z-10 font-light">
+                    SleepyTime is a sleep cycle calculator that helps users find the best time to fall asleep or wake up. I added an alarm feature and simplified buttons.
+                </p>
+            </div>
+        </div>
+    </main>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

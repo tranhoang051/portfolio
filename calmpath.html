@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalmPath Project Sanctuary | Tran Hoang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], serif: ['"Playfair Display"', 'serif'], mono: ['"Space Grotesk"', 'sans-serif'] }, colors: { framer: { bg: '#FAF9F5', border: '#EBEAE6', charcoal: '#1A1A1A', grayText: '#666666' } } } }
+        }
+    </script>
+</head>
+<body class="text-framer-charcoal font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <header class="sticky top-0 z-50 bg-[#FAF9F5]/90 backdrop-blur-md border-b border-framer-border">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex flex-col">
+                    <span class="font-mono text-base tracking-widest uppercase font-extrabold text-framer-charcoal">TRAN HOANG</span>
+                    <span class="text-[10px] tracking-wider text-framer-grayText uppercase font-semibold">UI/UX Portfolio</span>
+                </a>
+                <nav class="flex items-center space-x-6 sm:space-x-10 text-xs tracking-widest uppercase font-bold text-framer-grayText">
+                    <a href="about.html" class="pb-1 hover:text-framer-charcoal transition-colors">About</a>
+                    <a href="projects.html" class="pb-1 framer-nav-active">Projects</a>
+                    <a href="contact.html" class="pb-1 hover:text-framer-charcoal transition-colors">Contact</a>
+                    <a href="javascript:void(0)" onclick="alert('Downloading Tran Hoang UI/UX Resume PDF...');" class="pb-1 hover:text-framer-charcoal transition-colors">Resume</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="slide-view py-6 space-y-12">
+            <a href="projects.html" class="inline-flex items-center space-x-2 text-xs font-bold uppercase font-mono tracking-widest text-framer-grayText hover:text-framer-charcoal">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i><span>Back to Decks</span>
+            </a>
+
+            <div class="bg-[#FAF3DD] border border-[#EBEAE6] text-framer-charcoal rounded-[2.5rem] p-8 lg:p-12 space-y-8 relative overflow-hidden shadow-lg">
+                <div class="flex justify-between items-center border-b border-framer-border pb-6">
+                    <div class="space-y-1">
+                        <span class="text-[10px] font-mono font-bold text-framer-grayText uppercase tracking-widest">CalmPath Boutique Sanctuary</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl text-framer-charcoal">Find your way back to you</h2>
+                    </div>
+                    <span class="text-xs font-mono text-framer-grayText">PAGE 10 OF 15</span>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <p class="text-sm leading-relaxed text-framer-charcoal font-light">
+                        CalmPath is a boutique clinical ecosystem designed to help users navigate their mental health journey with ease and somatic awareness.
+                    </p>
+                    <div class="rounded-2xl overflow-hidden border border-framer-border shadow-md">
+                        <img src="https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?auto=format&fit=crop&w=800&q=80" class="w-full h-48 object-cover" alt="Quiet Meditation Path" />
+                    </div>
+                </div>
+
+                <div class="space-y-3 pt-4">
+                    <h4 class="text-[10px] font-mono uppercase tracking-widest text-framer-grayText font-bold text-center">Therapy Visual Palette Spectrum</h4>
+                    <div class="grid grid-cols-5 gap-2 text-[10px] text-center font-bold">
+                        <div class="p-3.5 rounded-xl bg-[#FFA69E]">#FFA69E</div>
+                        <div class="p-3.5 rounded-xl bg-[#FAF3DD] border border-framer-border">#FAF3DD</div>
+                        <div class="p-3.5 rounded-xl bg-[#B8F2E6]">#B8F2E6</div>
+                        <div class="p-3.5 rounded-xl bg-[#AED9E0]">#AED9E0</div>
+                        <div class="p-3.5 rounded-xl bg-[#5E6472] text-white">#5E6472</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info | Tran Hoang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], serif: ['"Playfair Display"', 'serif'], mono: ['"Space Grotesk"', 'sans-serif'] }, colors: { framer: { bg: '#FAF9F5', border: '#EBEAE6', charcoal: '#1A1A1A', grayText: '#666666' } } } }
+        }
+    </script>
+</head>
+<body class="text-framer-charcoal font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <header class="sticky top-0 z-50 bg-[#FAF9F5]/90 backdrop-blur-md border-b border-framer-border">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex flex-col">
+                    <span class="font-mono text-base tracking-widest uppercase font-extrabold text-framer-charcoal">TRAN HOANG</span>
+                    <span class="text-[10px] tracking-wider text-framer-grayText uppercase font-semibold">UI/UX Portfolio</span>
+                </a>
+                <nav class="flex items-center space-x-6 sm:space-x-10 text-xs tracking-widest uppercase font-bold text-framer-grayText">
+                    <a href="about.html" class="pb-1 hover:text-framer-charcoal transition-colors">About</a>
+                    <a href="projects.html" class="pb-1 hover:text-framer-charcoal transition-colors">Projects</a>
+                    <a href="contact.html" class="pb-1 framer-nav-active">Contact</a>
+                    <a href="javascript:void(0)" onclick="alert('Downloading Tran Hoang UI/UX Resume PDF...');" class="pb-1 hover:text-framer-charcoal transition-colors">Resume</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-4xl w-full mx-auto px-4 py-8">
+        <div class="slide-view py-6 font-light">
+            <div class="bg-[#4A6B5D] text-white rounded-[2.5rem] border-4 border-framer-charcoal p-8 sm:p-12 shadow-2xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    
+                    <div class="space-y-6 text-center md:text-left">
+                        <span class="inline-block bg-white/10 text-[#FAF3DD] border border-white/20 px-3.5 py-1 rounded-full text-[10px] font-mono uppercase tracking-widest font-bold">🍵 Connect</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl text-[#FAF3DD]">Connect with Tran</h2>
+                        <p class="text-xs text-green-100 leading-relaxed">Reach out directly via email to start collaborating:</p>
+                        <div class="py-2">
+                            <a href="mailto:nhoang2@umbc.edu" class="inline-flex items-center space-x-2 text-xl sm:text-2xl font-bold font-mono text-[#FAF3DD] hover:text-white transition-all">
+                                <span>nhoang2@umbc.edu</span><i data-lucide="mail" class="w-5 h-5 ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 bg-white/5 p-6 rounded-3xl border border-white/10">
+                        <form onsubmit="alert('Message Sent successfully!'); this.reset(); return false;" class="space-y-4">
+                            <input type="text" placeholder="Your Name" required class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-xs text-white focus:outline-none">
+                            <input type="email" placeholder="Your Email" required class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-xs text-white focus:outline-none">
+                            <textarea rows="3" placeholder="How can we collaborate?" required class="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-xs text-white focus:outline-none"></textarea>
+                            <button type="submit" class="w-full bg-[#FAF3DD] text-framer-charcoal hover:bg-white py-3 rounded-xl text-xs font-bold font-mono uppercase tracking-widest transition-all">Send Message</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
