@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tran Hoang | UI/UX Designer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'serif'],
+                        mono: ['"Space Grotesk"', 'sans-serif'],
+                    },
+                    colors: {
+                        framer: {
+                            bg: '#FAF9F5',
+                            accent: '#E66453',
+                            border: '#EBEAE6',
+                            charcoal: '#1A1A1A',
+                            grayText: '#666666'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-framer-charcoal font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-brand-peach">
+
+    <header class="sticky top-0 z-50 bg-[#FAF9F5]/90 backdrop-blur-md border-b border-framer-border">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="home.html" class="flex flex-col">
+                    <span class="font-mono text-base tracking-widest uppercase font-extrabold text-framer-charcoal">TRAN HOANG</span>
+                   
+                </a>
+                <nav class="flex items-center space-x-6 sm:space-x-10 text-xs tracking-widest uppercase font-bold text-framer-grayText">
+                    <a href="about.html" class="pb-1 hover:text-framer-charcoal transition-colors">About</a>
+                    <a href="projects.html" class="pb-1 hover:text-framer-charcoal transition-colors">Projects</a>
+                    <a href="contact.html" class="pb-1 hover:text-framer-charcoal transition-colors">Contact</a>
+<a
+  href="https://drive.google.com/file/d/1lIOg-dr3ZEi7Ho6BRwf5a3B8ECJ2RYwf/view"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Resume
+</a>                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="slide-view space-y-16 py-12">
+            
+            <div class="max-w-3xl mx-auto text-center space-y-8 py-10">
+                <span class="font-mono text-xs tracking-widest uppercase font-bold text-framer-grayText">UI/UX PORTFOLIO</span>
+                <h1 class="font-serif text-5xl sm:text-6xl md:text-7xl font-normal leading-tight tracking-tight text-framer-charcoal">
+                    Hi, I'm Tran Hoang
+                </h1>
+                <p class="text-base sm:text-lg text-framer-grayText leading-relaxed max-w-2xl mx-auto font-light">
+                    UI/UX Designer passionate about creating interfaces that are simple, intuitive, and people-centered. I enjoy transforming ideas into designs that feel effortless to use and are visually engaging.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 pt-4">
+                    <a href="projects.html" class="bg-framer-charcoal text-white hover:bg-framer-grayText px-8 py-4 rounded-xl text-xs font-bold uppercase tracking-wider transition-all shadow-md flex items-center space-x-2">
+                        <span>Explore Projects</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="about.html" class="bg-white border border-framer-border text-framer-charcoal hover:bg-framer-bg px-8 py-4 rounded-xl text-xs font-bold uppercase tracking-wider transition-all">
+                        <span>About me</span>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="space-y-8 pt-12 border-t border-framer-border">
+                <div class="space-y-1 text-center">
+                    <span class="text-[10px] font-mono tracking-widest uppercase text-framer-grayText font-bold">PROJECTS DECK</span>
+                    <h2 class="font-serif text-3.5xl text-framer-charcoal">Featured Case Studies</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white border border-framer-border rounded-[2rem] overflow-hidden shadow-sm flex flex-col justify-between h-[30rem]">
+                        <div class="relative h-44 overflow-hidden bg-teal-800">
+                            <img src="wanderly_img/Mobile App Screen Mockup, Mosaic.png" alt="Wanderly Travel" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                            <div class="space-y-2">
+                                <h3 class="font-serif text-2xl text-framer-charcoal">Wanderly Traveling App</h3>
+                                <p class="text-xs text-framer-grayText leading-relaxed font-light">
+                                    Wanderly Travel is a mobile app designed to help travelers plan, organize, and enjoy trips effortlessly. It combines personalized recommendations, itinerary management, and budget tracking in
+                                    one intuitive platform.
+                                </p>
+                            </div>
+                            <div>
+                                <a href="wanderly.html" class="bg-framer-charcoal text-white hover:bg-framer-grayText px-5 py-3 rounded-xl text-xs font-bold uppercase tracking-wider transition-all inline-flex items-center space-x-2">
+                                    <span>View More</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-framer-border rounded-[2rem] overflow-hidden shadow-sm flex flex-col justify-between h-[30rem]">
+                        <div class="relative h-44">
+                            <img src="calmpath_img/clp.png" alt="CalmPath Sanctuary" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                            <div class="space-y-2">
+                                <h3 class="font-serif text-2xl text-framer-charcoal">CalmPath Website</h3>
+                                <p class="text-xs text-framer-grayText leading-relaxed font-light">
+                                  CalmPath is a boutique clinical ecosystem designed to help users navigate their mental health journey with ease and somatic awareness. It combines biometric-aware communication, personalized therapeutic matching, and integrated nervous system
+                                  exercises in one intuitive, high-end sanctuary.
+                                </p>
+                            </div>
+                            <div>
+                                <a href="calmpath.html" class="bg-framer-charcoal text-white hover:bg-framer-grayText px-5 py-3 rounded-xl text-xs font-bold uppercase tracking-wider transition-all inline-flex items-center space-x-2">
+                                    <span>View More</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-framer-border rounded-[2rem] overflow-hidden shadow-sm flex flex-col justify-between h-[30rem]">
+                        <div class="relative h-44 overflow-hidden bg-indigo-950">
+                            <img src="sleepy_img/Mobile App Screen Mockup, Mosaic.png" alt="Sleepytime App" class="w-full h-full object-cover" />
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+                            <div class="space-y-2">
+                                <h3 class="font-serif text-2xl text-framer-charcoal">Sleepytime Redesign</h3>
+                                <p class="text-xs text-framer-grayText leading-relaxed font-light">
+                                   A calming redesign of the SleepyTime app focused on improving navigation, usability, and bedtime routine support. I added an alarm feature, simplified the layout, and refined the visual design to create a more relaxing and intuitive user experience.
+                            </div>
+                            <div>
+                                <a href="sleepytime.html" class="bg-framer-charcoal text-white hover:bg-framer-grayText px-5 py-3 rounded-xl text-xs font-bold uppercase tracking-wider transition-all inline-flex items-center space-x-2">
+                                    <span>View More</span>
+                                    <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
